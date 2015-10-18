@@ -200,12 +200,12 @@ public int getPosition() {
 	
 	public void outputResults(int answer){
 		Random ranObj = new Random();
-		int ran;
-		
-		if (answer==1)
-		 ran = 1+ ranObj.nextInt(2);
+		int i, ran=0;
+	
+	if (answer==1)
+		 ran = 1+ ranObj.nextInt(3);
 		else
-		  ran = 4+ ranObj.nextInt(2);
+		 ran = 4+ ranObj.nextInt(3);
 		
 		
 		switch(ran)
@@ -222,6 +222,7 @@ public int getPosition() {
 			break;
 			case 6: System.out.println("Wrong this time");
 			break;
+			
 		
 		}
 	

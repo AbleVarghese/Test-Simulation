@@ -15,7 +15,7 @@ public class Main_Class {
 		Obj1.simulateQuestion();
 		//Obj1.inputAnswer();
 		//Obj1.checkAnswer();
-		//Obj1.outputResuts();
+		//Obj1.outputResults();
 		
 	}
 
