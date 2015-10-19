@@ -21,8 +21,8 @@ public class Main_Class {
 int input;
 
 do{
-System.out.println("Press 1 to take the quiz test \nPress 2 to play the Dice game\n"
-		+ "Press 3 to exit\n");		
+System.out.println("**************************************************\nPress 1 to take the quiz test \nPress 2 to play the Dice game\n"
+		+ "Press 3 to exit\n**************************************************\n");		
 Scanner obj = new Scanner(System.in);
 input = obj.nextInt();
 

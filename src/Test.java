@@ -97,7 +97,7 @@ public class Test {
 
 		setPosition(5);
 		System.out.println("What is the default value of an instance variable of type String? \n");
-		System.out.println("1. one \n2. two \n3. null \n4. \"\" \n\n ");
+		System.out.println("1. one \n2. two \n3. null \n4. \"\" \n ");
 		choice = user_input.nextInt();
 		setChoice(choice);
 		checkAnswer();
