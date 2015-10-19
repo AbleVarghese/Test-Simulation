@@ -1,3 +1,13 @@
+
+/*
+Program: Quiz Test 
+Description: Five programming related questions are asked to the user. If the answers are correct, 
+the users are appreciated, if the answers are wrong, the user is asked to try again. The appreciation or 
+or disapproval messages are selected at random for each of the five questions.
+Name: Able Varghese
+Student No: 300 806 936
+ */
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -50,52 +60,51 @@ public class Test {
 		this.choice = answer;
 	}
 
-	public Test() {
-		// TODO Auto-generated constructor stub
-	}
+	
 
-	Scanner user_input = new Scanner(System.in);
-
+	// Method in which questions are asked and inputs are received.
 	public void simulateQuestion() {
 		int choice;
-
+		Scanner user_input = new Scanner(System.in);
+		
 		setPosition(1);
-		System.out.println("Do contructors return a value? no");
-		System.out.println("Choices:\n1. yes \n2. no \n3. 1 value \n4. 2 values");
+		System.out.println("Do contructors return a value?");
+		System.out.println("Choices:\n1. yes \n2. no \n3. 1 value \n4. 2 values\n");
 		choice = user_input.nextInt();
 		setChoice(choice);
 		checkAnswer();
 
 		setPosition(2);
-		System.out.println("How many return a value(s) are possible from a method? 1");
-		System.out.println("1. One \n2. Two \n3. None \n4. many");
+		System.out.println("How many return a value(s) are possible from a method?");
+		System.out.println("1. One \n2. Two \n3. None \n4. many\n");
 		choice = user_input.nextInt();
 		setChoice(choice);
 		checkAnswer();
 
 		setPosition(3);
-		System.out.println("What is the default value of an instance variable of type double? 0.0 ");
-		System.out.println("1. 0 \n2. 0.0 \n3. 1 \n4. null");
+		System.out.println("What is the default value of an instance variable of type double?");
+		System.out.println("1. 0 \n2. 0.0 \n3. 1 \n4. null\n");
 		choice = user_input.nextInt();
 		setChoice(choice);
 		checkAnswer();
 
 		setPosition(4);
-		System.out.println("How many values can a primitive type variable store at a time? 1");
-		System.out.println("1. One \n2. 2 \n3. many value \n4. 300 values");
+		System.out.println("How many values can a primitive type variable store at a time?");
+		System.out.println("1. One \n2. 2 \n3. many value \n4. 300 values\n");
 		choice = user_input.nextInt();
 		setChoice(choice);
 		checkAnswer();
 
 		setPosition(5);
-		System.out.println("The default value of an instance variable of type String is null ");
-		System.out.println("1. one \n2. two \n3. null \n4. \"\" ");
+		System.out.println("What is the default value of an instance variable of type String? \n");
+		System.out.println("1. one \n2. two \n3. null \n4. \"\" \n\n ");
 		choice = user_input.nextInt();
 		setChoice(choice);
 		checkAnswer();
+		Main_Class.main(null);
 	}
 
-	// Answer Check method
+	// Answer Checking method
 
 	public void checkAnswer() {
 
@@ -152,11 +161,11 @@ public class Test {
 
 	}
 
-	// Output method
+	// Method in which results are validated and printed as outputs
 
 	public void outputResults(int answer) {
 		Random ranObj = new Random();
-		int i, ran = 0;
+		int ran = 0;
 
 		if (answer == 1)
 			ran = 1 + ranObj.nextInt(3);
@@ -184,6 +193,7 @@ public class Test {
 			break;
 
 		}
+		
 
 	}
 
